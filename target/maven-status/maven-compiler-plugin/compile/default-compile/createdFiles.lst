@@ -1,0 +1,12 @@
+controller\DashboardServlet.class
+controller\Server.class
+controller\oauth\google\GoogleLoginServlet.class
+controller\admin\ProtectedServlet.class
+dao\AuthUser.class
+services\consultation\PeerJSEndpoint.class
+services\consultation\PeerJSServlet.class
+controller\oauth\google\ExtractServletFromGoogleAuth.class
+controller\oauth\entry\IncorporationServlet.class
+utility\VerifyExisting.class
+utility\jdbc\DatabaseConnection.class
+controller\oauth\google\GoogleCallbackServlet.class

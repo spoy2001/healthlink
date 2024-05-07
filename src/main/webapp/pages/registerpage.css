@@ -1,1 +1,20 @@
+.bsb-tpl-bg-platinum {
+    background-color: #DFF5FF !important; /* Blue color */
+}
 
+/* Add box-shadow to form fields */
+.form-control {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add box-shadow to container */
+.container {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Move sign-in-with-google to upper div */
+.sign-in-google {
+    margin-top: 20px;
+}
+  

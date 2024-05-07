@@ -14,25 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/registrations/registration-3/assets/css/registration-3.css">
     <style>
-      .bsb-tpl-bg-platinum {
-          background-color: #DFF5FF !important; /* Blue color */
-      }
-
-      /* Add box-shadow to form fields */
-      .form-control {
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-
-      /* Add box-shadow to container */
-      .container {
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-          border-radius: 10px;
-      }
-
-      /* Move sign-in-with-google to upper div */
-      .sign-in-google {
-          margin-top: 20px;
-      }
+      
   </style>
 </head>
 
@@ -62,13 +44,11 @@
             </div>
             <hr class="mt-4 mb-4 border-secondary" style="width: 100%">
             <div class="mt-4 mb-4 text-center">
-                <h3 class="fs-6 fw-normal text-secondary">Or</h3>                             
+                <h3 class="fs-6 fw-normal text-secondary ">Or</h3> 
             </div>
             <div class="mt-4 mb-4">
                 <h3 class="fs-6 fw-normal text-secondary">Enter your details to register</h3>                             
-            </div>
-            
-            
+            </div>                        
               <form id="registrationForm">
                   <div class="row gy-3">
                       <div class="col-md-6">

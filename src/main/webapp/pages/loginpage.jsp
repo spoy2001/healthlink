@@ -25,14 +25,14 @@
                                     <h6 class="mt-1 mb-5 pb-1">Please login to your account</h6>
 
                                     <div data-mdb-input-init class="form-outline mb-4">
-                                        <label class="form-label" for="username">Username</label>
-                                        <input type="text" id="username" name="username" class="form-control"
-                                               placeholder="Username" /><br/>
+                                        <label class="form-label" for="email">Email address</label>
+                                        <input type="email" id="email" name="email" class="form-control"
+                                               placeholder="Email" /><br/>
                                     </div>
 
                                     <div data-mdb-input-init class="form-outline mb-4">
                                         <label class="form-label" for="password">Password</label>
-                                        <input type="password" id="password" name="password" class="form-control" />
+                                        <input type="password" id="password" name="password" class="form-control" placeholder="********" />
                                     </div>
 
                                     <div class="text-center pt-1 mb-5 pb-1">
@@ -67,52 +67,8 @@
 <!-- Include Bootstrap JavaScript file -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-Mcww50lTxVVWI3ZXJzyHSLm3/3FkJzIiS+BiHwwp6GdQ0BoJYMWLrD7k3k2fzNjd" crossorigin="anonymous"></script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        console.log("Document loaded");
-        document.getElementById("loginForm").addEventListener("submit", function (event) {
-            console.log("Form submitted");
-            event.preventDefault(); // Prevent form submission
-
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-            var errorMessage = "";
-
-            if (username.trim() === "") {
-                errorMessage += "Username is required.<br>";
-            }
-            if (password.trim() === "") {
-                errorMessage += "Password is required.<br>";
-            }
-
-            if (errorMessage !== "") {
-                showAlert(errorMessage);
-            } else {
-                // Perform login submission
-                this.submit();
-            }
-        });
-    });
-
-    function showAlert(message) {
-        console.log("Showing alert");
-        var alertElement = document.createElement("div");
-        alertElement.className = "alert alert-danger alert-dismissible fade show";
-        alertElement.innerHTML = message;
-        
-        var closeButton = document.createElement("button");
-        closeButton.type = "button";
-        closeButton.className = "btn-close";
-        closeButton.setAttribute("data-bs-dismiss", "alert");
-        closeButton.setAttribute("aria-label", "Close");
-
-        alertElement.appendChild(closeButton);
-
-        var alertContainer = document.getElementById("alertContainer");
-        alertContainer.innerHTML = "";
-        alertContainer.appendChild(alertElement);
-    }
-</script>
+<!-- Include custom JavaScript file -->
+<script src="loginpage.js"></script>
 
 </body>
 </html>
